@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Scene 1/1A/1A.unity
+    guid: 2e385a626078beb48987f11c17fd0c47
+  - enabled: 1
+    path: Assets/Scenes/Scene 1/1B/1B.unity
+    guid: 67b1c480b2a128b4d90eab7df1e87ba7
+  - enabled: 1
+    path: Assets/Scenes/Scene 2/2A/2A.unity
+    guid: 02dca064f5658434b9156ea1c58226c4
+  - enabled: 1
+    path: Assets/Scenes/Scene 2/2B/2B.unity
+    guid: f15fa9d376d3749479e43dd0b880c607
+  - enabled: 1
+    path: Assets/Scenes/Scene 2/2C/2C.unity
+    guid: 4e496984b4412e440aee187c48562c59
+  - enabled: 1
+    path: Assets/Scenes/Scene 2/2C2/2C2.unity
+    guid: 47fc5f039b224724ab8c1c97b825dd05
+  - enabled: 1
+    path: Assets/Scenes/Scene 2/2D/2D.unity
+    guid: ce637746c5217ff46bb65280df94c453
+  - enabled: 1
+    path: Assets/Scenes/Scene 3/2E3A/2E3A.unity
+    guid: 31c5979227fb0db49a7d108ad26ae878
+  - enabled: 1
+    path: Assets/Scenes/Scene 2/2C1/2C1.unity
+    guid: 9b7585757c3f5894b9def4f45fa9f647
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 3701bf75224c59044a6c82706f52d742,
+      type: 2}

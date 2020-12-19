@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &1779252388670829808
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6016903633550419553}
+    m_Modifications:
+    - target: {fileID: 8054249502595166983, guid: c67366174bb855b47963ee8b49181c7b,
+        type: 3}
+      propertyPath: m_Name
+      value: LeftHandWIthNoteBook1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8055753652272732805, guid: c67366174bb855b47963ee8b49181c7b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8055753652272732805, guid: c67366174bb855b47963ee8b49181c7b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8055753652272732805, guid: c67366174bb855b47963ee8b49181c7b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8055753652272732805, guid: c67366174bb855b47963ee8b49181c7b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8055753652272732805, guid: c67366174bb855b47963ee8b49181c7b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8055753652272732805, guid: c67366174bb855b47963ee8b49181c7b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8055753652272732805, guid: c67366174bb855b47963ee8b49181c7b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8055753652272732805, guid: c67366174bb855b47963ee8b49181c7b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8055753652272732805, guid: c67366174bb855b47963ee8b49181c7b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8055753652272732805, guid: c67366174bb855b47963ee8b49181c7b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8055753652272732805, guid: c67366174bb855b47963ee8b49181c7b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c67366174bb855b47963ee8b49181c7b, type: 3}
+--- !u!1001 &6020855325221680439
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1000011547835092, guid: d5082f7d9f947374197e0a97786f4e40, type: 3}
+      propertyPath: m_Name
+      value: LeftHandWIthNoteBook1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012469850966, guid: d5082f7d9f947374197e0a97786f4e40, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012469850966, guid: d5082f7d9f947374197e0a97786f4e40, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012469850966, guid: d5082f7d9f947374197e0a97786f4e40, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012469850966, guid: d5082f7d9f947374197e0a97786f4e40, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012469850966, guid: d5082f7d9f947374197e0a97786f4e40, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012469850966, guid: d5082f7d9f947374197e0a97786f4e40, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012469850966, guid: d5082f7d9f947374197e0a97786f4e40, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012469850966, guid: d5082f7d9f947374197e0a97786f4e40, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012469850966, guid: d5082f7d9f947374197e0a97786f4e40, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012469850966, guid: d5082f7d9f947374197e0a97786f4e40, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012469850966, guid: d5082f7d9f947374197e0a97786f4e40, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013071118052, guid: d5082f7d9f947374197e0a97786f4e40,
+        type: 3}
+      propertyPath: handPrefab
+      value: 
+      objectReference: {fileID: 8801227625280354806, guid: 88c36dd633dd10b4d9a02e8ed50c5d1a,
+        type: 3}
+    - target: {fileID: 114000013071118052, guid: d5082f7d9f947374197e0a97786f4e40,
+        type: 3}
+      propertyPath: displayHandByDefault
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d5082f7d9f947374197e0a97786f4e40, type: 3}
+--- !u!4 &6016903633550419553 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4000012469850966, guid: d5082f7d9f947374197e0a97786f4e40,
+    type: 3}
+  m_PrefabInstance: {fileID: 6020855325221680439}
+  m_PrefabAsset: {fileID: 0}

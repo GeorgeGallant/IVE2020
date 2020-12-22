@@ -5,7 +5,7 @@ using UnityEngine;
 public class SelectionTimer : MonoBehaviour
 {
 
-    public float timeUntilSelection = 00.0f;
+    public float timeUntilSelection = 05.0f;
     public GameObject canvasWithButtons;
     private Canvas selection;
     private GameObject Option1;

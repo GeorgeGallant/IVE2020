@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5991304799685681142}
   - component: {fileID: 6622075038977497589}
   m_Layer: 0
-  m_Name: Notebook for Scene1 1
+  m_Name: Notebook 2E3A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25,9 +25,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 302920727614509499}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0.5, y: 0, z: 0, w: 0.8660254}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.1200178, y: 0.120017804, z: 0.12001782}
   m_Children:
   - {fileID: 4825513447671923243}
   - {fileID: 8441328790955440981}

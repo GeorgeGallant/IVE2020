@@ -303,6 +303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextScene: 
+  mainCanvas: {fileID: 0}
 --- !u!65 &4523286280177446501
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -694,7 +695,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c1ff08e0dd1c5e4c88db6c3afddf2f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 
+  nextScene: 5C2
+  mainCanvas: {fileID: 0}
 --- !u!65 &2346425421860550528
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1862,6 +1864,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextScene: 
+  mainCanvas: {fileID: 0}
 --- !u!65 &4523286281611270303
 BoxCollider:
   m_ObjectHideFlags: 0

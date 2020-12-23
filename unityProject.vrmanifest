@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.ive2020v1.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "E:\\CJ 360 Training\\Repo Unity\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "N:\\IVE2020\\IVE2020V1-GIT\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "IVE2020V1 [Testing]"

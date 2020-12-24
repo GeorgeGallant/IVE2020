@@ -46,6 +46,7 @@ public class SpeechToTextNewest : MonoBehaviour
 
     //tracks good and bad scene
     public string GoodSceneName;
+    public string GoodSceneIntent;
     public string BadSceneName;
 
     //tracks if recording started or not.

@@ -59,7 +59,7 @@ PrefabInstance:
         type: 3}
       propertyPath: handPrefab
       value: 
-      objectReference: {fileID: 8801227625280354806, guid: 88c36dd633dd10b4d9a02e8ed50c5d1a,
+      objectReference: {fileID: 8801227625280354806, guid: 8ac46148116e84a4589659b5a149a2bf,
         type: 3}
     - target: {fileID: 114000013071118052, guid: d5082f7d9f947374197e0a97786f4e40,
         type: 3}

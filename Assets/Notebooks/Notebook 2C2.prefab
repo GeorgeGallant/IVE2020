@@ -311,7 +311,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1148290817776331425}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
   m_Camera: {fileID: 0}
@@ -1406,8 +1406,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8020074833363649090}
-        m_MethodName: TaskOnClick
+      - m_Target: {fileID: 6060415395219376684}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1429,7 +1429,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c1ff08e0dd1c5e4c88db6c3afddf2f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 
+  nextScene: 2D
+  mainCanvas: {fileID: 0}
 --- !u!65 &2902195966965732492
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1439,10 +1440,10 @@ BoxCollider:
   m_GameObject: {fileID: 6060415395219376684}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 193.03397, y: 86.256065, z: 29.7199}
-  m_Center: {x: 0.26202172, y: -7.4255843, z: -4.219662}
+  m_Size: {x: 193.03397, y: 96.58, z: 10.22}
+  m_Center: {x: 6.62, y: -0.4, z: 2.9}
 --- !u!1 &6081569907713148984
 GameObject:
   m_ObjectHideFlags: 0
@@ -1594,8 +1595,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1813194451274655602}
-        m_MethodName: TaskOnClick
+      - m_Target: {fileID: 6282790332099441501}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1617,7 +1618,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c1ff08e0dd1c5e4c88db6c3afddf2f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 
+  nextScene: 2C2
+  mainCanvas: {fileID: 0}
 --- !u!65 &5501913442499104751
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1627,10 +1629,10 @@ BoxCollider:
   m_GameObject: {fileID: 6282790332099441501}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 193.03397, y: 77.45369, z: 29.7199}
-  m_Center: {x: 0.26202646, y: -0.60880286, z: -4.219662}
+  m_Size: {x: 193.03397, y: 97.86, z: 11.12}
+  m_Center: {x: 7.3, y: 1.02, z: 3.8}
 --- !u!1 &6528715086080912831
 GameObject:
   m_ObjectHideFlags: 0
@@ -2057,7 +2059,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c1ff08e0dd1c5e4c88db6c3afddf2f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 1A
+  nextScene: 2C1
+  mainCanvas: {fileID: 0}
 --- !u!65 &6984180538950358444
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2067,10 +2070,10 @@ BoxCollider:
   m_GameObject: {fileID: 7391538856937933899}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 193.03397, y: 89.79781, z: 29.7199}
-  m_Center: {x: 0.26202646, y: 6.1510863, z: -4.219662}
+  m_Size: {x: 193.03397, y: 105.64, z: 10.98}
+  m_Center: {x: 8.6, y: 3.34, z: 5.6}
 --- !u!1 &7646070379594808385
 GameObject:
   m_ObjectHideFlags: 0

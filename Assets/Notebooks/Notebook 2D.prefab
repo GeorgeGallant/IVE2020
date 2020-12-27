@@ -279,8 +279,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2346425420975473886}
-        m_MethodName: TaskOnClick
+      - m_Target: {fileID: 2346425420975473884}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -302,7 +302,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c1ff08e0dd1c5e4c88db6c3afddf2f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 
+  nextScene: 2C2
+  mainCanvas: {fileID: 0}
 --- !u!65 &4523286280177446501
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -312,10 +313,10 @@ BoxCollider:
   m_GameObject: {fileID: 2346425420975473884}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 193.03397, y: 77.45369, z: 29.7199}
-  m_Center: {x: 0.26202646, y: -0.60880286, z: -4.219662}
+  m_Size: {x: 193.03397, y: 98.81, z: 9.73}
+  m_Center: {x: 5.73, y: 0.9, z: 5}
 --- !u!1 &2346425421122900252
 GameObject:
   m_ObjectHideFlags: 0
@@ -694,7 +695,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c1ff08e0dd1c5e4c88db6c3afddf2f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 1A
+  nextScene: 2C1
+  mainCanvas: {fileID: 0}
 --- !u!65 &2346425421860550528
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -704,10 +706,10 @@ BoxCollider:
   m_GameObject: {fileID: 2346425421860550557}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 193.03397, y: 89.79781, z: 29.7199}
-  m_Center: {x: 0.26202646, y: 6.1510863, z: -4.219662}
+  m_Size: {x: 193.03397, y: 98.74, z: 15.76}
+  m_Center: {x: 14.18, y: 2.2, z: 8.7}
 --- !u!1 &2346425422260594779
 GameObject:
   m_ObjectHideFlags: 0
@@ -835,7 +837,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2346425422804802074}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
   m_Camera: {fileID: 0}
@@ -1838,8 +1840,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4523286281223054409}
-        m_MethodName: TaskOnClick
+      - m_Target: {fileID: 4523286281223054407}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1861,7 +1863,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c1ff08e0dd1c5e4c88db6c3afddf2f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 
+  nextScene: 2D
+  mainCanvas: {fileID: 0}
 --- !u!65 &4523286281611270303
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1871,10 +1874,10 @@ BoxCollider:
   m_GameObject: {fileID: 4523286281223054407}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 193.03397, y: 86.256065, z: 29.7199}
-  m_Center: {x: 0.26202172, y: -7.4255843, z: -4.219662}
+  m_Size: {x: 193.03397, y: 96.15, z: 11.8}
+  m_Center: {x: 8.53, y: -3.59, z: 8.1}
 --- !u!1 &4523286281263872170
 GameObject:
   m_ObjectHideFlags: 0
@@ -2356,7 +2359,7 @@ GameObject:
   - component: {fileID: 7698523260451415128}
   - component: {fileID: 2032004120542073050}
   m_Layer: 0
-  m_Name: Notebook for Scene1
+  m_Name: Notebook 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

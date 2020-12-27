@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20cd828e1ba322e4b97399f6e3280a7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeUntilSelection: 0
+  timeUntilSelection: 5
   canvasWithButtons: {fileID: 0}
 --- !u!1 &1092318088474014741
 GameObject:

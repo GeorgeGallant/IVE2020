@@ -279,8 +279,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2346425420975473886}
-        m_MethodName: TaskOnClick
+      - m_Target: {fileID: 2346425420975473884}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -302,7 +302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c1ff08e0dd1c5e4c88db6c3afddf2f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 
+  nextScene: 2C2
   mainCanvas: {fileID: 0}
 --- !u!65 &4523286280177446501
 BoxCollider:
@@ -313,9 +313,9 @@ BoxCollider:
   m_GameObject: {fileID: 2346425420975473884}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 193.03397, y: 77.45369, z: 29.7199}
+  m_Size: {x: 193.03397, y: 107.56, z: 3.5}
   m_Center: {x: 0.26202646, y: -0.60880286, z: -4.219662}
 --- !u!1 &2346425421122900252
 GameObject:
@@ -472,7 +472,7 @@ MonoBehaviour:
   m_Text: 'Choice #1
 
 
-    Get her tombstone information'
+    Get her tombstone information from'
 --- !u!1 &2346425421518255757
 GameObject:
   m_ObjectHideFlags: 0
@@ -581,7 +581,7 @@ RectTransform:
   m_GameObject: {fileID: 2346425421860550557}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.5, y: 0.5, z: -0.166985}
   m_Children:
   - {fileID: 2346425421131709566}
   m_Father: {fileID: 2346425422804802077}
@@ -695,7 +695,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c1ff08e0dd1c5e4c88db6c3afddf2f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 5C2
+  nextScene: 2C1
   mainCanvas: {fileID: 0}
 --- !u!65 &2346425421860550528
 BoxCollider:
@@ -706,10 +706,10 @@ BoxCollider:
   m_GameObject: {fileID: 2346425421860550557}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 193.03397, y: 89.79781, z: 29.7199}
-  m_Center: {x: 0.26202646, y: 6.1510863, z: -4.219662}
+  m_Size: {x: 191.9, y: 104.6, z: 19.6}
+  m_Center: {x: -0.8, y: -0.4, z: -4.219662}
 --- !u!1 &2346425422260594779
 GameObject:
   m_ObjectHideFlags: 0
@@ -837,7 +837,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2346425422804802074}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
   m_Camera: {fileID: 0}
@@ -1840,8 +1840,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4523286281223054409}
-        m_MethodName: TaskOnClick
+      - m_Target: {fileID: 4523286281223054407}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1863,7 +1863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c1ff08e0dd1c5e4c88db6c3afddf2f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 
+  nextScene: 2D
   mainCanvas: {fileID: 0}
 --- !u!65 &4523286281611270303
 BoxCollider:
@@ -1874,10 +1874,10 @@ BoxCollider:
   m_GameObject: {fileID: 4523286281223054407}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 193.03397, y: 86.256065, z: 29.7199}
-  m_Center: {x: 0.26202172, y: -7.4255843, z: -4.219662}
+  m_Size: {x: 193.03397, y: 102.25, z: 5}
+  m_Center: {x: 0.26202172, y: -1.8, z: -4.219662}
 --- !u!1 &4523286281263872170
 GameObject:
   m_ObjectHideFlags: 0

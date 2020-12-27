@@ -311,7 +311,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1148290817776331425}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
   m_Camera: {fileID: 0}
@@ -1092,7 +1092,9 @@ MonoBehaviour:
   m_Text: 'Choice #1
 
 
-    Get her tombstone information'
+    How did you get in here?
+
+'
 --- !u!1 &5351809020577720501
 GameObject:
   m_ObjectHideFlags: 0
@@ -1406,8 +1408,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8020074833363649090}
-        m_MethodName: TaskOnClick
+      - m_Target: {fileID: 6060415395219376684}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1429,7 +1431,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c1ff08e0dd1c5e4c88db6c3afddf2f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 
+  nextScene: 3D
+  mainCanvas: {fileID: 0}
 --- !u!65 &2902195966965732492
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1439,10 +1442,10 @@ BoxCollider:
   m_GameObject: {fileID: 6060415395219376684}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 193.03397, y: 86.256065, z: 29.7199}
-  m_Center: {x: 0.26202172, y: -7.4255843, z: -4.219662}
+  m_Size: {x: 193.03397, y: 104.93, z: 12.23}
+  m_Center: {x: 9.8, y: -2.73, z: 9.7}
 --- !u!1 &6081569907713148984
 GameObject:
   m_ObjectHideFlags: 0
@@ -1594,8 +1597,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1813194451274655602}
-        m_MethodName: TaskOnClick
+      - m_Target: {fileID: 6282790332099441501}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1617,7 +1620,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c1ff08e0dd1c5e4c88db6c3afddf2f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 
+  nextScene: 3D
+  mainCanvas: {fileID: 0}
 --- !u!65 &5501913442499104751
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1627,10 +1631,10 @@ BoxCollider:
   m_GameObject: {fileID: 6282790332099441501}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 193.03397, y: 77.45369, z: 29.7199}
-  m_Center: {x: 0.26202646, y: -0.60880286, z: -4.219662}
+  m_Size: {x: 193.03397, y: 101.95, z: 10.86}
+  m_Center: {x: 9.4, y: -0.4, z: 7.2}
 --- !u!1 &6528715086080912831
 GameObject:
   m_ObjectHideFlags: 0
@@ -1912,7 +1916,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Choice #2\n\nAsk if she \nlives alone"
+  m_Text: 'Choice #2
+
+
+    Have you been drinking?'
 --- !u!1 &7391538856937933899
 GameObject:
   m_ObjectHideFlags: 0
@@ -2057,7 +2064,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c1ff08e0dd1c5e4c88db6c3afddf2f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 1A
+  nextScene: 4A
+  mainCanvas: {fileID: 0}
 --- !u!65 &6984180538950358444
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2067,10 +2075,10 @@ BoxCollider:
   m_GameObject: {fileID: 7391538856937933899}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 193.03397, y: 89.79781, z: 29.7199}
-  m_Center: {x: 0.26202646, y: 6.1510863, z: -4.219662}
+  m_Size: {x: 193.03397, y: 103.45, z: 7.68}
+  m_Center: {x: 7.67, y: 3.8, z: 6.3}
 --- !u!1 &7646070379594808385
 GameObject:
   m_ObjectHideFlags: 0
@@ -2182,9 +2190,7 @@ MonoBehaviour:
   m_Text: 'Choice #3
 
 
-    Are there valuables
-
-    inside the home?'
+    Where do you work?'
 --- !u!1 &7894288153337222753
 GameObject:
   m_ObjectHideFlags: 0

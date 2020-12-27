@@ -201,7 +201,7 @@ PrefabInstance:
     - target: {fileID: 850530028894783134, guid: e628c5f129d29c64b8960041d504f1bb,
         type: 3}
       propertyPath: timeUntilSelection
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8040000858409881792, guid: e628c5f129d29c64b8960041d504f1bb,
         type: 3}

@@ -287,6 +287,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1699918786 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7048876650003369165, guid: 10de5dbe6bb8beb48bbb8d529707782c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1796725615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1699918796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699918786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae4fd760dcd40e4488b2659974f8813a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outputText: test
+  outputText2: test
+  RecordMic:
+    actionPath: /actions/default/in/InteractUI
+    needsReinit: 0
+  handType: 0
+  GoodSceneName: 1A
+  GoodSceneIntent: p3v.dispatch.ack
+  BadSceneName: Testing Scene
+  recordingStarted: 0
+  args: []
 --- !u!1001 &1796725615
 PrefabInstance:
   m_ObjectHideFlags: 0

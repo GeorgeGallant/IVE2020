@@ -22,7 +22,7 @@ using System.Web;
 using Valve.VR;
 using UnityEngine.SceneManagement;
 
-public class SpeechToTextNewest : MonoBehaviour
+public class SpeechToText : MonoBehaviour
 {
     // Hook up the  properties below with a Text and Button object in your UI.
     public String outputText = "test";
@@ -164,7 +164,7 @@ public class SpeechToTextNewest : MonoBehaviour
         try
         {
             //checks the answer against the message.
-            if (FeedbackAnswers[0].ToString() == "p3v.ScenarioStart" && FeedbackAnswers[1] > .1)
+            if (FeedbackAnswers[0].ToString() == "p3v.ScenarioStart" && Convert.ToDouble(FeedbackAnswers[1]) > 0.1)
             {
                 SceneManager.LoadScene(GoodSceneName);
                 //VRPlayer needs to be deleted as it cannot transfer over to the next scene.

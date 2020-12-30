@@ -301,7 +301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c1ff08e0dd1c5e4c88db6c3afddf2f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: ' '
+  nextScene: 5B1
   mainCanvas: {fileID: 0}
 --- !u!65 &3554112615852154375
 BoxCollider:
@@ -312,7 +312,7 @@ BoxCollider:
   m_GameObject: {fileID: 1037131974221913054}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 193.03397, y: 103.45, z: 7.68}
   m_Center: {x: 7.67, y: 3.8, z: 6.3}
@@ -1323,7 +1323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c1ff08e0dd1c5e4c88db6c3afddf2f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: ' '
+  nextScene: 5B1
   mainCanvas: {fileID: 0}
 --- !u!65 &8485207282661938648
 BoxCollider:
@@ -1334,7 +1334,7 @@ BoxCollider:
   m_GameObject: {fileID: 4998402184295569804}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 193.03397, y: 104.93, z: 12.23}
   m_Center: {x: 9.8, y: -2.73, z: 9.7}

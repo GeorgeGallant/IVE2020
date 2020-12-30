@@ -151,7 +151,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 531796974870256993, guid: de8e458787d9a59489f416fba3727fc8,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 7c185942fba17dd40863ada4c4558a3b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a4a50efb5ea1a8247a43695b58d92b0e, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -323,7 +323,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1313136139}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: fb807776d6f16b84ebbc49b594d6ce93, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: b2e3613e8632f9645bbd55a138bc454e, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -393,7 +393,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7415851846986049358, guid: de8e458787d9a59489f416fba3727fc8,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 8ccf3fda934497f45ad6391f64b3d9b1, type: 3}
+  m_audioClip: {fileID: 8300000, guid: dd8ecc98463a0c94ab5b8fb5e55385a0, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

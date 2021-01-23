@@ -695,7 +695,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c1ff08e0dd1c5e4c88db6c3afddf2f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 2C1
+  nextScene: 2C2
   mainCanvas: {fileID: 0}
 --- !u!65 &2346425421860550528
 BoxCollider:
@@ -708,8 +708,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 191.9, y: 104.6, z: 19.6}
-  m_Center: {x: -0.8, y: -0.4, z: -4.219662}
+  m_Size: {x: 191.9, y: 33.165493, z: 19.6}
+  m_Center: {x: -0.7999973, y: -10.057768, z: -4.2196026}
 --- !u!1 &2346425422260594779
 GameObject:
   m_ObjectHideFlags: 0
@@ -1863,7 +1863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c1ff08e0dd1c5e4c88db6c3afddf2f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 2D
+  nextScene: 2C1
   mainCanvas: {fileID: 0}
 --- !u!65 &4523286281611270303
 BoxCollider:

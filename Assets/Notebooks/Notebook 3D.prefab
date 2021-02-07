@@ -1041,7 +1041,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c1ff08e0dd1c5e4c88db6c3afddf2f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 3B1
+  nextScene: 4A
   mainCanvas: {fileID: 0}
 --- !u!65 &4612705273118350547
 BoxCollider:

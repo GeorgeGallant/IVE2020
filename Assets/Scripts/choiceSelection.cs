@@ -51,6 +51,10 @@ public class choiceSelection : MonoBehaviour
                 sceneTracker.button2Clicked = true;
                 LoadNewScene();
             }
+            else if (this.gameObject.name == "Option #3")
+            {
+                LoadNewScene();
+            }
         }
     }
     private void LoadNewScene()

@@ -24,7 +24,7 @@ public class VoiceInteraction : MonoBehaviour
 // private
     private static object threadLocker = new object();  // for thread locking
     private float elapsedTime = 0.0f;         // for timing 
-    private bool isMicTriggerSet = false;    // has the mic trigger been set?
+    private static bool isMicTriggerSet = false;    // has the mic trigger been set?
     private static bool isRecording = false;        // have we started recording?
     private static bool isRecognized = false;
     private ArrayList selectedIntent = new ArrayList();  // the answer!
@@ -65,9 +65,10 @@ public class VoiceInteraction : MonoBehaviour
         // if this is attached to a button, this would be a good place to add a state listener
         if (useMic && (StartAfterSeconds == 0))
         {
-            RecordMic.AddOnStateDownListener(ButtonClick, handType); // this is a click not a hold!!!
+            RecordMic.AddOnStateDownListener(ButtonClick, handType); // 
             isMicTriggerSet = true;
         }
+        Debug.Log("Current Scene Start: " + (SceneManager.GetActiveScene()).name);
     }
 
     // Update is called once per frame
@@ -111,8 +112,10 @@ public class VoiceInteraction : MonoBehaviour
         if (isRecognized)
         {
             // all the listening is done and we have some answer
+            RecordMic.RemoveOnStateDownListener(ButtonClick, handType);
             try
             {
+                Scene scene = SceneManager.GetActiveScene();
                 //checks the answer against the message.
                 if (selectedIntent[0].ToString() == GoodSceneIntent && Convert.ToDouble(selectedIntent[1]) >= 0.167)
                 {
@@ -127,12 +130,13 @@ public class VoiceInteraction : MonoBehaviour
                 if (useMic)
                 {
                     // if we have attached this to the Button Click, we need to specifically destroy it
-                    Destroy(this.gameObject);
+                    //Destroy(GameObject.Find("VRPlayer"));
                 }
                 else
                 {
                     // otherwise, trying to destroy breaks everything!
                 }
+                SceneManager.UnloadSceneAsync(scene.name);
 
 
                 //catches out of range exception
@@ -202,7 +206,7 @@ public class VoiceInteraction : MonoBehaviour
 
     public async void ButtonClick(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource)
     {
-        await TimedListener();
+        await TimedListener((StartAfterSeconds+TimeoutAfterSeconds)>15);
     }
 
     // Prediction Task

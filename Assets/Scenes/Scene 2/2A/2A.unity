@@ -203,7 +203,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 761526034}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e8765610876602949a75de2643ed501d, type: 3}
   m_Name: 
@@ -219,6 +219,29 @@ MonoBehaviour:
   BadSceneName: 2A
   recordingStarted: 0
   args: []
+--- !u!114 &761526036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761526034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f51fb9e2df34f542baf802820fe42db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RecordMic:
+    actionPath: /actions/default/in/GrabPinch
+    needsReinit: 0
+  handType: 2
+  GoodSceneIntent: p3v.dispatch.ackArrive
+  GoodSceneName: 2B
+  BadSceneName: 2A
+  useMic: 1
+  StartAfterSeconds: 0
+  TimeoutAfterSeconds: 35
+  lastUtterance: 
 --- !u!1 &1395214211
 GameObject:
   m_ObjectHideFlags: 0

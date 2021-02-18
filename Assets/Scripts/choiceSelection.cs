@@ -17,10 +17,14 @@ public class choiceSelection : MonoBehaviour
         // create a reference to the Scene Tracker which is used to track progress
         sceneTracker = GameObject.Find("SceneTracker").GetComponent<SceneTracker>();
         // if the first two buttons have been clicked
-        if (sceneTracker.sceneCount >= 2)
+        if (sceneTracker != null)
         {
-            sceneTracker.InvokeSuccess();
+            if (sceneTracker.sceneCount >= 2)
+            {
+                sceneTracker.InvokeSuccess();
+            }
         }
+       
     }
 
     private void Update()

@@ -593,7 +593,7 @@ MonoBehaviour:
   GoodSceneIntent: p3v.suspect.engage
   GoodSceneName: 3B
   BadSceneName: 3A
-  useMic: 1
+  useMic: 0
   StartAfterSeconds: 3
   TimeoutAfterSeconds: 22
   lastUtterance: 

@@ -24,11 +24,12 @@ public class VoiceInteraction : MonoBehaviour
 // private
     private static object threadLocker = new object();  // for thread locking
     private float elapsedTime = 0.0f;         // for timing 
-    private static bool isMicTriggerSet = false;    // has the mic trigger been set?
-    private static bool isRecording = false;        // have we started recording?
-    private static bool isRecognized = false;
+    private bool isMicTriggerSet = false;    // has the mic trigger been set?
+    private bool isRecording = false;        // have we started recording?
+    private bool isRecognized = false;
     private ArrayList selectedIntent = new ArrayList();  // the answer!
-    
+    private bool useMic;
+
     // Replace with your own subscription key and service region (e.g., "westus").
     private static string subscription_key = "c23410a601b74a1782766c68ef3f44f7"; // speech to text
     private static string region_name = "canadacentral";   // speech to text
@@ -41,7 +42,7 @@ public class VoiceInteraction : MonoBehaviour
 
     // YOUR-PREDICTION-ENDPOINT: Example is "https://westus.api.cognitive.microsoft.com/"
     private static string predictionEndpoint = "https://p360v.cognitiveservices.azure.com/"; // LUIS
-
+    
 // public
     // VR Related
     public SteamVR_Action_Boolean RecordMic;    // the action
@@ -53,7 +54,7 @@ public class VoiceInteraction : MonoBehaviour
     public string BadSceneName;             // where to go when utterance is not correct
 
     // How are we listening?
-    public Boolean useMic;              // trigger on mic if true 
+    public Boolean useRadioMic;              // trigger on mic if true 
     public int StartAfterSeconds;       // don't allow the trigger until after this time
     public int TimeoutAfterSeconds;     // how much time after the listening starts
 
@@ -62,6 +63,7 @@ public class VoiceInteraction : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        useMic = useRadioMic;
         // if this is attached to a button, this would be a good place to add a state listener
         if (useMic && (StartAfterSeconds == 0))
         {
@@ -80,6 +82,7 @@ public class VoiceInteraction : MonoBehaviour
             // start the mic if it is a delayed start
             if (useMic && (StartAfterSeconds > 0) && (elapsedTime >= StartAfterSeconds))
             {
+                Debug.Log($"Mic trigger active at {elapsedTime} seconds.");
                 RecordMic.AddOnStateDownListener(ButtonClick, handType); // this is a click not a hold?!!
                 isMicTriggerSet = true;
             }
@@ -87,7 +90,8 @@ public class VoiceInteraction : MonoBehaviour
             else if (!useMic && (elapsedTime >= StartAfterSeconds)) {
                 isMicTriggerSet = true;
                 isRecording = true;
-//                Debug.Log($"About to start TimedListener({reps})");
+                //                Debug.Log($"About to start TimedListener({reps})");
+                Debug.Log($"Mic active at {elapsedTime} seconds.");
                 await TimedListener(true);
 //                Debug.Log($"Returned from starting TimedListener({reps})");
                 if (!isRecognized)
@@ -97,7 +101,7 @@ public class VoiceInteraction : MonoBehaviour
             }
         }
 
-        if (isRecording && (TimeoutAfterSeconds > 0) && (elapsedTime >= (StartAfterSeconds + TimeoutAfterSeconds)))
+        if (isRecording && (TimeoutAfterSeconds > 0) && (elapsedTime >= (TimeoutAfterSeconds)))
         {
             // that's all the time we have
             // stop the recordinng
@@ -112,7 +116,10 @@ public class VoiceInteraction : MonoBehaviour
         if (isRecognized)
         {
             // all the listening is done and we have some answer
-            RecordMic.RemoveOnStateDownListener(ButtonClick, handType);
+            if (true)
+            {
+                Debug.Log($"Intent: {selectedIntent[0].ToString()} ({Convert.ToDouble(selectedIntent[1])})");
+            }
             try
             {
                 Scene scene = SceneManager.GetActiveScene();
@@ -131,10 +138,12 @@ public class VoiceInteraction : MonoBehaviour
                 {
                     // if we have attached this to the Button Click, we need to specifically destroy it
                     //Destroy(GameObject.Find("VRPlayer"));
+                    RecordMic.RemoveOnStateDownListener(ButtonClick, handType);
                 }
                 else
                 {
                     // otherwise, trying to destroy breaks everything!
+                    
                 }
                 SceneManager.UnloadSceneAsync(scene.name);
 
@@ -143,7 +152,7 @@ public class VoiceInteraction : MonoBehaviour
             }
             //catches the argument for feedback answers not being fullfilled yet.
             catch (ArgumentOutOfRangeException)
-            { }
+            { Debug.Log("Something terrible happened while changing scenes"); }
 
         }
     }

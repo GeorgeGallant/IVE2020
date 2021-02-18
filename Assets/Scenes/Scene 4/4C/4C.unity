@@ -593,7 +593,7 @@ MonoBehaviour:
   GoodSceneIntent: p3v.altercation.wordsOfInsertion
   GoodSceneName: 4B
   BadSceneName: 4A
-  useMic: 1
+  useMic: 0
   StartAfterSeconds: 5
   TimeoutAfterSeconds: 22
   lastUtterance: 

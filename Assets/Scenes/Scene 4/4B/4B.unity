@@ -590,10 +590,10 @@ MonoBehaviour:
     actionPath: 
     needsReinit: 0
   handType: 0
-  GoodSceneIntent: p3c.fto.separate
+  GoodSceneIntent: p3v.fto.separate
   GoodSceneName: 5A
   BadSceneName: 4D
-  useMic: 1
+  useRadioMic: 0
   StartAfterSeconds: 4
   TimeoutAfterSeconds: 14
   lastUtterance: 

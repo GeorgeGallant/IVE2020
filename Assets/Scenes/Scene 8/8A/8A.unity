@@ -723,10 +723,10 @@ MonoBehaviour:
     actionPath: 
     needsReinit: 0
   handType: 0
-  GoodSceneIntent: p3V.suspect.propertyStays
+  GoodSceneIntent: p3v.suspect.propertyStays
   GoodSceneName: 8B
   BadSceneName: 8C
-  useMic: 1
+  useRadioMic: 0
   StartAfterSeconds: 11
   TimeoutAfterSeconds: 29
   lastUtterance: 

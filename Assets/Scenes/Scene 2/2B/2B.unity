@@ -507,10 +507,10 @@ MonoBehaviour:
     actionPath: 
     needsReinit: 0
   handType: 0
-  GoodSceneIntent: p3v.fto.firstStep
+  GoodSceneIntent: p3v.suspect.engage
   GoodSceneName: 2C
   BadSceneName: 2B
-  useMic: 1
+  useMic: 0
   StartAfterSeconds: 5
   TimeoutAfterSeconds: 28
   lastUtterance: 

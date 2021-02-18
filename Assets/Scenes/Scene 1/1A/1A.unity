@@ -819,6 +819,6 @@ MonoBehaviour:
   GoodSceneName: 1B
   BadSceneName: 1A
   useMic: 1
-  StartAfterSeconds: 15
+  StartAfterSeconds: 5
   TimeoutAfterSeconds: 40
   lastUtterance: 

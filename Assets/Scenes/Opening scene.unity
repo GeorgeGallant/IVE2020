@@ -353,6 +353,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68bf93d38c9fca94b83c70ae2f19f484, type: 3}
+--- !u!1 &1632331088 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 591015879144979692, guid: 68bf93d38c9fca94b83c70ae2f19f484,
+    type: 3}
+  m_PrefabInstance: {fileID: 1632331087}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1632331089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632331088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f51fb9e2df34f542baf802820fe42db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RecordMic:
+    actionPath: 
+    needsReinit: 0
+  handType: 0
+  GoodSceneIntent: Start this experience
+  GoodSceneName: 1A
+  BadSceneName: 1A
+  useRadioMic: 0
+  StartAfterSeconds: 45
+  TimeoutAfterSeconds: 9999
+  lastUtterance: 
 --- !u!1 &2014313399
 GameObject:
   m_ObjectHideFlags: 0

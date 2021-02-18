@@ -238,7 +238,7 @@ MonoBehaviour:
   GoodSceneIntent: p3v.dispatch.ackArrive
   GoodSceneName: 2B
   BadSceneName: 2A
-  useMic: 1
+  useRadioMic: 1
   StartAfterSeconds: 0
   TimeoutAfterSeconds: 35
   lastUtterance: 

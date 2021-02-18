@@ -330,7 +330,7 @@ MonoBehaviour:
   GoodSceneIntent: p3v.dispatch.ackCopy
   GoodSceneName: 2A
   BadSceneName: 1B
-  useMic: 1
+  useRadioMic: 1
   StartAfterSeconds: 15
   TimeoutAfterSeconds: 40
   lastUtterance: 

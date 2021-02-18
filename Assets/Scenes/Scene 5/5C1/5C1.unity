@@ -745,6 +745,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68bf93d38c9fca94b83c70ae2f19f484, type: 3}
+--- !u!1 &2033283348 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 591015879144979692, guid: 68bf93d38c9fca94b83c70ae2f19f484,
+    type: 3}
+  m_PrefabInstance: {fileID: 2033283347}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2033283349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033283348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f51fb9e2df34f542baf802820fe42db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RecordMic:
+    actionPath: 
+    needsReinit: 0
+  handType: 0
+  GoodSceneIntent: p3v.suspect.sitDown
+  GoodSceneName: 5B1
+  BadSceneName: 5A
+  useMic: 1
+  StartAfterSeconds: 0
+  TimeoutAfterSeconds: 37
+  lastUtterance: 
 --- !u!1 &2132236825
 GameObject:
   m_ObjectHideFlags: 0

@@ -25,6 +25,12 @@ public class SceneTracker : MonoBehaviour
     }
     private void Success()
     {
+
+        Scene2Management();
+        sceneTrackerReset();
+    }
+    void Scene2Management()
+    {
         // create references to the buttons and script
         option2Button = GameObject.Find("Option #2");
         option3Button = GameObject.Find("Option #3");
@@ -37,7 +43,9 @@ public class SceneTracker : MonoBehaviour
         // update the text for the first button and change what scene it goes to
         option1ButtonText.text = "Go Inside";
         choiceScript.nextScene = "2E3A";
-
+    }
+    public void sceneTrackerReset()
+    {
         // reset the values
         button1Clicked = false;
         button1Clicked = false;

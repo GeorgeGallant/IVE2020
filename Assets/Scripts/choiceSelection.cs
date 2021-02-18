@@ -35,26 +35,75 @@ public class choiceSelection : MonoBehaviour
         // only if the index finger press the button
         if (other.gameObject.name.Contains("finger_index"))
         {
+            string sceneName = SceneManager.GetActiveScene().name;
+            if (sceneName.StartsWith("2"))
+            {
+                if (this.gameObject.name == "Option #1" && !sceneTracker.button1Clicked)
+                {
+                    // increase sceneCount by 1 and indicate the button has been clicked
+                    sceneTracker.sceneCount++;
+                    sceneTracker.button1Clicked = true;
+                    LoadNewScene();
+                }
+                // if the button clicked is the second button and it hasn't been clicked before
+                else if (this.gameObject.name == "Option #2" && !sceneTracker.button2Clicked)
+                {
+                    // increase sceneCount by 1 and indicate the button has been clicked
+                    sceneTracker.sceneCount++;
+                    sceneTracker.button2Clicked = true;
+                    LoadNewScene();
+                }
+                else if (this.gameObject.name == "Option #3" && !sceneTracker.button3Clicked)
+                {
+                    sceneTracker.button3Clicked = true;
+                    LoadNewScene();
+                }
+            }
+            else if (sceneName.StartsWith("3"))
+            {
+                if (this.gameObject.name == "Option #1")
+                {
+                    sceneTracker.sceneTrackerReset();
+                    LoadNewScene();
+                }
+                else if (this.gameObject.name == "Option #2" && !sceneTracker.button2Clicked)
+                {
+                    sceneTracker.button2Clicked = true;
+                    LoadNewScene();
+                }
+                else if (this.gameObject.name == "Option #3" && !sceneTracker.button3Clicked)
+                {
+                    sceneTracker.button3Clicked = true;
+                    LoadNewScene();
+                }
+            }
+            else if (sceneName.StartsWith("5"))
+            {
+                if (this.gameObject.name == "Option #1" && !sceneTracker.button1Clicked)
+                {
+                    sceneTracker.button1Clicked = true;
+                    LoadNewScene();
+                }
+                else if (this.gameObject.name == "Option #2")
+                {
+                    sceneTracker.sceneTrackerReset();
+                    LoadNewScene();
+                }
+                else if (this.gameObject.name == "Option #3" && !sceneTracker.button3Clicked)
+                {
+                    sceneTracker.button3Clicked = true;
+                    LoadNewScene();
+                }
+            }
+
+
+
+
+
+
             // if the button clicked is the first button and it hasn't been clicked before
-            if (this.gameObject.name == "Option #1" && !sceneTracker.button1Clicked)
-            {
-                // increase sceneCount by 1 and indicate the button has been clicked
-                sceneTracker.sceneCount++;
-                sceneTracker.button1Clicked = true;
-                LoadNewScene();
-            }
-            // if the button clicked is the second button and it hasn't been clicked before
-            else if (this.gameObject.name == "Option #2" && !sceneTracker.button2Clicked)
-            {
-                // increase sceneCount by 1 and indicate the button has been clicked
-                sceneTracker.sceneCount++;
-                sceneTracker.button2Clicked = true;
-                LoadNewScene();
-            }
-            else if (this.gameObject.name == "Option #3")
-            {
-                LoadNewScene();
-            }
+            
+
         }
     }
     private void LoadNewScene()

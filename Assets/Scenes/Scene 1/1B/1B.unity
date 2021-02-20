@@ -349,7 +349,7 @@ PrefabInstance:
     - target: {fileID: 7681297478134486647, guid: 10de5dbe6bb8beb48bbb8d529707782c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.1
+      value: 0.233
       objectReference: {fileID: 0}
     - target: {fileID: 7681297478134486647, guid: 10de5dbe6bb8beb48bbb8d529707782c,
         type: 3}
@@ -359,7 +359,7 @@ PrefabInstance:
     - target: {fileID: 7681297478134486647, guid: 10de5dbe6bb8beb48bbb8d529707782c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.5
+      value: -0.0291
       objectReference: {fileID: 0}
     - target: {fileID: 7681297478134486647, guid: 10de5dbe6bb8beb48bbb8d529707782c,
         type: 3}
@@ -428,7 +428,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1627137594}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 23829a565b47ec146b8e1bbd9ef05551, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 1a6c286292502024abb8219e8a71809d, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -544,7 +544,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.9
+      value: 0.732
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -639,7 +639,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2141675545}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.15, y: -3.54, z: -12.79}
+  m_LocalPosition: {x: 8.3, y: -3.54, z: -4.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

@@ -14,10 +14,12 @@ using System;
 using System.Collections;
 using System.Net.Http;
 using System.Threading.Tasks;
+using System.IO;
 using Valve.Newtonsoft.Json.Linq;
 using System.Web;
 using Valve.VR;
 using UnityEngine.SceneManagement;
+
 
 public class VoiceInteraction : MonoBehaviour
 {
@@ -42,8 +44,8 @@ public class VoiceInteraction : MonoBehaviour
 
     // YOUR-PREDICTION-ENDPOINT: Example is "https://westus.api.cognitive.microsoft.com/"
     private static string predictionEndpoint = "https://p360v.cognitiveservices.azure.com/"; // LUIS
-    
-// public
+
+    // public
     // VR Related
     public SteamVR_Action_Boolean RecordMic;    // the action
     public SteamVR_Input_Sources handType;      // the hand
@@ -60,9 +62,26 @@ public class VoiceInteraction : MonoBehaviour
 
     public String lastUtterance = "";
 
+    private static void SpeechLog(String logMessage, Boolean showDebugLog = false)
+    {
+        StreamWriter w = File.AppendText("SpeechLog.txt");
+        w.Write("[{0},{1}]", DateTime.Now.ToLongDateString(), DateTime.Now.ToLongTimeString());
+        w.WriteLine(",[{0}]", logMessage);
+        w.Flush();
+        w.Close();
+
+        if (showDebugLog)
+        {
+            Debug.Log(logMessage);
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("Current Scene Start: " + (SceneManager.GetActiveScene()).name);
+        SpeechLog($"Good Intent= {GoodSceneIntent}, Good Scene= {GoodSceneName}, Bad Scene= {BadSceneName}", true);
+
         useMic = useRadioMic;
         // if this is attached to a button, this would be a good place to add a state listener
         if (useMic && (StartAfterSeconds == 0))
@@ -70,7 +89,6 @@ public class VoiceInteraction : MonoBehaviour
             RecordMic.AddOnStateDownListener(ButtonClick, handType); // 
             isMicTriggerSet = true;
         }
-        Debug.Log("Current Scene Start: " + (SceneManager.GetActiveScene()).name);
     }
 
     // Update is called once per frame
@@ -108,6 +126,8 @@ public class VoiceInteraction : MonoBehaviour
             // check the utterance
             // take an action
             Debug.Log("Timeout Occurred.");
+            SpeechLog($"Timeout after {TimeoutAfterSeconds}");
+
             selectedIntent.Add("Timeout!");
             selectedIntent.Add(0.000);
             isRecognized = true;
@@ -116,10 +136,7 @@ public class VoiceInteraction : MonoBehaviour
         if (isRecognized)
         {
             // all the listening is done and we have some answer
-            if (true)
-            {
-                Debug.Log($"Intent: {selectedIntent[0].ToString()} ({Convert.ToDouble(selectedIntent[1])})");
-            }
+            SpeechLog($"Intent: {selectedIntent[0].ToString()} ({Convert.ToDouble(selectedIntent[1])}), Utterance: {selectedIntent[2]}",true);
             try
             {
                 Scene scene = SceneManager.GetActiveScene();
@@ -157,6 +174,10 @@ public class VoiceInteraction : MonoBehaviour
         }
     }
 
+    public void OnDestroy()
+    {
+        //nothing to see here yet
+    }
 
     public async Task TimedListener(Boolean continualListening = false)
     {
@@ -202,12 +223,14 @@ public class VoiceInteraction : MonoBehaviour
             Debug.Log("Finished listening and heard: " + utterance);
             Task<string> strPrediction = GetIntentFromUtterance(predictionKey, predictionEndpoint, appId, utterance);
             var predictionResult = JObject.Parse(strPrediction.Result);
+            Debug.Log(predictionResult);
             var topIntent = predictionResult["prediction"]["topIntent"];
             var score = predictionResult["prediction"]["intents"][topIntent.ToString()]["score"];
 
             // provides topintent and score.
-            selectedIntent.Add(topIntent.ToString());
-            selectedIntent.Add(score);
+            selectedIntent.Add(topIntent.ToString()); // what is the top intent?
+            selectedIntent.Add(score); // how did it score?
+            selectedIntent.Add(utterance); // what did the listener hear?
             isRecognized = true;
             isRecording = false;
         }
@@ -233,7 +256,7 @@ public class VoiceInteraction : MonoBehaviour
         // query string preparation
         queryString["query"] = utterance;               // utterance
         queryString["verbose"] = "true";                // verbose, default true
-        queryString["show-all-intents"] = "false";      // show all, default "false"
+        queryString["show-all-intents"] = "true";      // show all, default "false"
         queryString["staging"] = "true";                // staging, default true?
         queryString["timezoneOffset"] = "0";            // timezoneOffset, 0? //TODO
 

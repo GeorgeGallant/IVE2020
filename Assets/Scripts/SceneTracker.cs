@@ -13,11 +13,20 @@ public class SceneTracker : MonoBehaviour
     private GameObject option3Button;
     private Text option1ButtonText;
     private choiceSelection choiceScript;
-    void Start()
+    private static SceneTracker instance = null;
+    private void Awake()
     {
-        // makes this object not get destroyed between scenes
-        // need this so we can track progress between scenes
-        DontDestroyOnLoad(this.gameObject); 
+        // used to only allow one instance of the Scene Tracker in the project
+        if (instance == null)
+        {
+            // if no instance exists yet, set it to don't destroy
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
+            return;
+        }
+        // delete objects that exist in the scene if one already is
+        // persistent
+        Destroy(this.gameObject);
     }
     public void InvokeSuccess()
     {

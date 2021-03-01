@@ -67,6 +67,9 @@ public class choiceSelection : MonoBehaviour
             {
                 if (this.gameObject.name == "Option #1")
                 {
+                    // for some reason, the sceneTrackerReset doesn't
+                    // reset button 2 in Scene 3, so this line is added
+                    sceneTracker.button2Clicked = false;
                     sceneTracker.sceneTrackerReset();
                     LoadNewScene();
                 }
@@ -99,15 +102,6 @@ public class choiceSelection : MonoBehaviour
                     LoadNewScene();
                 }
             }
-
-
-
-
-
-
-            // if the button clicked is the first button and it hasn't been clicked before
-            
-
         }
     }
     private void LoadNewScene()

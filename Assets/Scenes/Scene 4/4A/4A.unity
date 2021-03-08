@@ -215,7 +215,7 @@ MonoBehaviour:
   GoodSceneIntent: p3v.altercation.wordsOfInsertion
   GoodSceneName: 4B
   BadSceneName: 4C
-  useMic: 0
+  useRadioMic: 0
   StartAfterSeconds: 7
   TimeoutAfterSeconds: 25
   lastUtterance: 
@@ -404,7 +404,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.9
+      value: 0.6
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -581,7 +581,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.9
+      value: 0.6
       inSlope: 0
       outSlope: 0
       tangentMode: 0

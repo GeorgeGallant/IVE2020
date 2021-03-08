@@ -289,7 +289,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.9
+      value: 0.6
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -531,7 +531,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.9
+      value: 0.6
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -770,7 +770,7 @@ MonoBehaviour:
   GoodSceneIntent: p3v.suspect.giveOptions
   GoodSceneName: 8A
   BadSceneName: 7B
-  useMic: 1
+  useRadioMic: 0
   StartAfterSeconds: 12
   TimeoutAfterSeconds: 27
   lastUtterance: 

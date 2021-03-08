@@ -197,7 +197,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.9
+      value: 0.6
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -528,7 +528,7 @@ MonoBehaviour:
   GoodSceneIntent: p3v.fto.repeatStory
   GoodSceneName: 7A
   BadSceneName: 6B2
-  useMic: 1
+  useRadioMic: 0
   StartAfterSeconds: 16
   TimeoutAfterSeconds: 42
   lastUtterance: 
@@ -608,7 +608,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.9
+      value: 0.6
       inSlope: 0
       outSlope: 0
       tangentMode: 0

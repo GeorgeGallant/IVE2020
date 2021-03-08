@@ -197,7 +197,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.9
+      value: 0.6
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -382,17 +382,17 @@ PrefabInstance:
     - target: {fileID: 7681297478134486647, guid: 10de5dbe6bb8beb48bbb8d529707782c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.233
+      value: 0.26
       objectReference: {fileID: 0}
     - target: {fileID: 7681297478134486647, guid: 10de5dbe6bb8beb48bbb8d529707782c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.9
+      value: 1.033
       objectReference: {fileID: 0}
     - target: {fileID: 7681297478134486647, guid: 10de5dbe6bb8beb48bbb8d529707782c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0291
+      value: -0.263
       objectReference: {fileID: 0}
     - target: {fileID: 7681297478134486647, guid: 10de5dbe6bb8beb48bbb8d529707782c,
         type: 3}
@@ -433,6 +433,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7681297478134486647, guid: 10de5dbe6bb8beb48bbb8d529707782c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7681297478134486647, guid: 10de5dbe6bb8beb48bbb8d529707782c,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7681297478134486647, guid: 10de5dbe6bb8beb48bbb8d529707782c,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10de5dbe6bb8beb48bbb8d529707782c, type: 3}

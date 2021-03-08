@@ -280,7 +280,7 @@ MonoBehaviour:
   GoodSceneIntent: p3v.suspect.getStory
   GoodSceneName: 6A
   BadSceneName: 5C2
-  useMic: 1
+  useRadioMic: 0
   StartAfterSeconds: 18
   TimeoutAfterSeconds: 36
   lastUtterance: 
@@ -360,7 +360,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.9
+      value: 0.6
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -629,7 +629,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.9
+      value: 0.6
       inSlope: 0
       outSlope: 0
       tangentMode: 0

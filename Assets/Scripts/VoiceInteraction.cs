@@ -23,12 +23,16 @@ using UnityEngine.SceneManagement;
 
 public class VoiceInteraction : MonoBehaviour
 {
-// private
+    // private
+    // singleton behaviour
+    private static VoiceInteraction _instance;
+
     private static object threadLocker = new object();  // for thread locking
     private float elapsedTime = 0.0f;         // for timing 
     private bool isMicTriggerSet = false;    // has the mic trigger been set?
     private bool isRecording = false;        // have we started recording?
     private bool isRecognized = false;
+    private bool isProcessed = false;       // have we processed the recognized text?
     private ArrayList selectedIntent = new ArrayList();  // the answer!
     private bool useMic;
 
@@ -60,7 +64,21 @@ public class VoiceInteraction : MonoBehaviour
     public int StartAfterSeconds;       // don't allow the trigger until after this time
     public int TimeoutAfterSeconds;     // how much time after the listening starts
 
-    public String lastUtterance = "";
+    public double tolerance;            // range 0.0 < tolerance <= 1.0
+
+   /*
+    void Awake()
+    {
+        if (_instance == null)
+        {
+            _instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        } else
+        {
+            Destroy(this);
+        }
+    }
+   */
 
     private static void SpeechLog(String logMessage, Boolean showDebugLog = false)
     {
@@ -79,9 +97,12 @@ public class VoiceInteraction : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if ((tolerance <= 0.0) || (tolerance > 1.0))
+        {
+            tolerance = 0.167;
+        }
         Debug.Log("Current Scene Start: " + (SceneManager.GetActiveScene()).name);
-        SpeechLog($"Good Intent= {GoodSceneIntent}, Good Scene= {GoodSceneName}, Bad Scene= {BadSceneName}", true);
-
+        SpeechLog($"Good Intent= {GoodSceneIntent}, Good Scene= {GoodSceneName}, Bad Scene= {BadSceneName}, tolerance: {tolerance}", false);
         useMic = useRadioMic;
         // if this is attached to a button, this would be a good place to add a state listener
         if (useMic && (StartAfterSeconds == 0))
@@ -94,6 +115,11 @@ public class VoiceInteraction : MonoBehaviour
     // Update is called once per frame
     async void Update()
     {
+        /*
+         * Enable listening if StartAfterSeconds >= elapsedTime
+         * Disable listening if elapsedTime >= TimeoutAfterSeconds
+         * Only process recognized text once
+        */
         elapsedTime += Time.deltaTime;
         if (!isMicTriggerSet)
         {
@@ -108,10 +134,8 @@ public class VoiceInteraction : MonoBehaviour
             else if (!useMic && (elapsedTime >= StartAfterSeconds)) {
                 isMicTriggerSet = true;
                 isRecording = true;
-                //                Debug.Log($"About to start TimedListener({reps})");
                 Debug.Log($"Mic active at {elapsedTime} seconds.");
                 await TimedListener(true);
-//                Debug.Log($"Returned from starting TimedListener({reps})");
                 if (!isRecognized)
                 {
                     isMicTriggerSet = false;
@@ -133,15 +157,16 @@ public class VoiceInteraction : MonoBehaviour
             isRecognized = true;
         }
 
-        if (isRecognized)
+        if (isRecognized && !isProcessed)
         {
             // all the listening is done and we have some answer
+            isProcessed = true; // only do this stuff once!!!
             SpeechLog($"Intent: {selectedIntent[0].ToString()} ({Convert.ToDouble(selectedIntent[1])}), Utterance: {selectedIntent[2]}",true);
             try
             {
                 Scene scene = SceneManager.GetActiveScene();
                 //checks the answer against the message.
-                if (selectedIntent[0].ToString() == GoodSceneIntent && Convert.ToDouble(selectedIntent[1]) >= 0.167)
+                if (selectedIntent[0].ToString() == GoodSceneIntent && Convert.ToDouble(selectedIntent[1]) >= tolerance)
                 {
                     SceneManager.LoadScene(GoodSceneName);
                 }
@@ -154,7 +179,6 @@ public class VoiceInteraction : MonoBehaviour
                 if (useMic)
                 {
                     // if we have attached this to the Button Click, we need to specifically destroy it
-                    //Destroy(GameObject.Find("VRPlayer"));
                     RecordMic.RemoveOnStateDownListener(ButtonClick, handType);
                 }
                 else
@@ -177,6 +201,7 @@ public class VoiceInteraction : MonoBehaviour
     public void OnDestroy()
     {
         //nothing to see here yet
+        //Destroy(GameObject.Find("VRPlayer"));
     }
 
     public async Task TimedListener(Boolean continualListening = false)

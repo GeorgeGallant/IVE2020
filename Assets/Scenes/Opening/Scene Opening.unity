@@ -381,7 +381,7 @@ MonoBehaviour:
   useRadioMic: 0
   StartAfterSeconds: 45
   TimeoutAfterSeconds: 30
-  lastUtterance: 
+  tolerance: 0
 --- !u!1 &2014313399
 GameObject:
   m_ObjectHideFlags: 0
